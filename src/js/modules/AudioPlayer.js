@@ -2,7 +2,6 @@ export default class AudioPlayer {
   constructor(showPlayer = true) {
     this.audioPlayerElement = document.createElement('audio');
     this.audioPlayerElement.controls = showPlayer;
-    this.audioPlayerElement.src = "./resources/audio.mp3";
     this.audioPlayerElement.crossOrigin = "anonymous";
 
     this.audioContext = null;
