@@ -10,7 +10,7 @@ export default class DotedSphere {
     this.material = new THREE.PointsMaterial({
       color: 0xffffff,
       size: this.dotSize,
-      map: new THREE.TextureLoader().load('./resources/particle.png'),
+      map: new THREE.TextureLoader().load('resources/particle.png'),
       blending: THREE.AdditiveBlending,
       transparent: true,
       depthWrite: false
