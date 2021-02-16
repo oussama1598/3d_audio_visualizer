@@ -17,6 +17,8 @@ const sphereSpectrum = new ThreeDSphereSpectrum(
 
 document.body.appendChild(sphereSpectrum.getRenderer().domElement);
 
+document.addEventListener('DOMContentLoaded', () => searchButton.click())
+
 searchButton.addEventListener('click', async () => {
   searchButton.innerText = 'Loading ...';
 
